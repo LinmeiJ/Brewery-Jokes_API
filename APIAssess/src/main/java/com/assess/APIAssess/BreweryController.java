@@ -37,6 +37,7 @@ public class BreweryController {
 		return new ModelAndView("detail-page","brew",response.getBody());
 	}
 
+	//get jokes from different API
 	@RequestMapping("go-joke")
 	public ModelAndView getJokes() {
 		headers.add(HttpHeaders.USER_AGENT,"testing");
